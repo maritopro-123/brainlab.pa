@@ -25,7 +25,7 @@ export default function BrainLabWebsite() {
         </div>
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <nav className="mb-14 flex items-center justify-between gap-4">
+          <nav className="mb-14 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex min-w-0 items-center gap-3">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
                 <span className="text-xl font-bold">B</span>
@@ -40,12 +40,32 @@ export default function BrainLabWebsite() {
               </div>
             </div>
 
-            <a
-              href="#contacto"
-              className="shrink-0 rounded-2xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5 sm:px-5"
-            >
-              Reservar clase
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="#servicios"
+                className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+              >
+                Servicios
+              </a>
+              <a
+                href="#idiomas"
+                className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+              >
+                Idiomas
+              </a>
+              <a
+                href="#porque-brainlab"
+                className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+              >
+                Por qué BrainLab
+              </a>
+              <a
+                href="#contacto"
+                className="rounded-2xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5 sm:px-5"
+              >
+                Contacto
+              </a>
+            </div>
           </nav>
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
@@ -193,7 +213,10 @@ export default function BrainLabWebsite() {
         </div>
       </section>
 
-      <section id="servicios" className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section
+        id="servicios"
+        className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8"
+      >
         <div className="max-w-2xl">
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-emerald-500">
             Servicios
@@ -240,82 +263,84 @@ export default function BrainLabWebsite() {
         </div>
       </section>
 
-      <section id="idiomas" className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
-  <div className="overflow-hidden rounded-[2.5rem] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-8 shadow-xl sm:p-10">
-    
-    <div className="max-w-3xl">
-      <p className="text-sm font-bold uppercase tracking-[0.25em] text-sky-500">
-        Idiomas
-      </p>
-      <h2 className="mt-3 text-4xl font-black tracking-tight leading-tight sm:text-5xl">
-        También ofrecemos apoyo en idiomas.
-      </h2>
-      <p className="mt-4 text-base leading-7 text-slate-600 text-justify sm:text-lg sm:leading-8">
-        Contamos con acompañamiento en idiomas para estudiantes que desean
-        fortalecer su nivel, practicar con mayor seguridad y avanzar de forma
-        clara y progresiva según sus objetivos.
-      </p>
-    </div>
-
-    <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-      {[
-        {
-          title: "Inglés",
-          level: "Avanzado",
-          text: "Acompañamiento avanzado con refuerzo en gramática, comprensión, vocabulario, lectura y expresión según el nivel del estudiante.",
-          accent: "bg-sky-100 text-sky-700",
-        },
-        {
-          title: "Portugués",
-          level: "Avanzado",
-          text: "Clases orientadas a fortalecer la base, mejorar la comprensión y avanzar con mayor seguridad en el uso del idioma.",
-          accent: "bg-emerald-100 text-emerald-700",
-        },
-        {
-          title: "Italiano",
-          level: "Avanzado",
-          text: "Apoyo enfocado en comprensión, estructura, vocabulario y desarrollo progresivo para seguir subiendo de nivel.",
-          accent: "bg-amber-100 text-amber-700",
-        },
-        {
-          title: "Japonés",
-          level: "N5 - N4",
-          text: "Introducción y refuerzo en lectura básica, vocabulario, estructura y comprensión de forma guiada y progresiva.",
-          accent: "bg-rose-100 text-rose-700",
-        },
-      ].map((card) => (
-        <div
-          key={card.title}
-          className="group flex h-full flex-col rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-        >
-          <div className="mb-5 flex items-center justify-between">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-sm">
-              <span className="text-lg font-bold">
-                {card.title.charAt(0)}
-              </span>
-            </div>
-
-            <span
-              className={`rounded-full px-3 py-1 text-xs font-bold tracking-wide ${card.accent}`}
-            >
-              {card.level}
-            </span>
+      <section
+        id="idiomas"
+        className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8"
+      >
+        <div className="overflow-hidden rounded-[2.5rem] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-8 shadow-xl sm:p-10">
+          <div className="max-w-3xl">
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-sky-500">
+              Idiomas
+            </p>
+            <h2 className="mt-3 text-4xl font-black tracking-tight leading-tight sm:text-5xl">
+              También ofrecemos apoyo en idiomas.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 text-justify sm:text-lg sm:leading-8">
+              Contamos con acompañamiento en idiomas para estudiantes que desean
+              fortalecer su nivel, practicar con mayor seguridad y avanzar de
+              forma clara y progresiva según sus objetivos.
+            </p>
           </div>
 
-          <h3 className="text-2xl font-black tracking-tight">
-            {card.title}
-          </h3>
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {[
+              {
+                title: "Inglés",
+                level: "Avanzado",
+                text: "Acompañamiento avanzado con refuerzo en gramática, comprensión, vocabulario, lectura y expresión según el nivel del estudiante.",
+                accent: "bg-sky-100 text-sky-700",
+              },
+              {
+                title: "Portugués",
+                level: "Avanzado",
+                text: "Clases orientadas a fortalecer la base, mejorar la comprensión y avanzar con mayor seguridad en el uso del idioma.",
+                accent: "bg-emerald-100 text-emerald-700",
+              },
+              {
+                title: "Italiano",
+                level: "Avanzado",
+                text: "Apoyo enfocado en comprensión, estructura, vocabulario y desarrollo progresivo para seguir subiendo de nivel.",
+                accent: "bg-amber-100 text-amber-700",
+              },
+              {
+                title: "Japonés",
+                level: "N5 - N4",
+                text: "Introducción y refuerzo en lectura básica, vocabulario, estructura y comprensión de forma guiada y progresiva.",
+                accent: "bg-rose-100 text-rose-700",
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="group flex h-full flex-col rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="mb-5 flex items-center justify-between">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-sm">
+                    <span className="text-lg font-bold">
+                      {card.title.charAt(0)}
+                    </span>
+                  </div>
 
-          <p className="mt-4 leading-7 text-slate-600 text-justify">
-            {card.text}
-          </p>
+                  <span
+                    className={`rounded-full px-3 py-1 text-xs font-bold tracking-wide ${card.accent}`}
+                  >
+                    {card.level}
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-black tracking-tight">
+                  {card.title}
+                </h3>
+
+                <p className="mt-4 leading-7 text-slate-600 text-justify">
+                  {card.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
-      <section className="bg-slate-900 text-white">
+      <section id="porque-brainlab" className="bg-slate-900 text-white">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
@@ -351,7 +376,10 @@ export default function BrainLabWebsite() {
         </div>
       </section>
 
-      <section id="contacto" className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section
+        id="contacto"
+        className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8"
+      >
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-slate-200">
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-emerald-500">
@@ -367,7 +395,9 @@ export default function BrainLabWebsite() {
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl bg-slate-50 p-5">
-                <p className="text-sm font-semibold text-slate-500">WhatsApp</p>
+                <p className="text-sm font-semibold text-slate-500">
+                  WhatsApp
+                </p>
                 <p className="mt-2 text-lg font-bold">6867-1253</p>
               </div>
 
