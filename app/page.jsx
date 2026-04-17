@@ -242,6 +242,7 @@ export default function BrainLabWebsite() {
 
       <section id="idiomas" className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
   <div className="overflow-hidden rounded-[2.5rem] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-8 shadow-xl sm:p-10">
+    
     <div className="max-w-3xl">
       <p className="text-sm font-bold uppercase tracking-[0.25em] text-sky-500">
         Idiomas
@@ -260,22 +261,19 @@ export default function BrainLabWebsite() {
       {[
         {
           title: "Inglés",
-          level: "Nivel C2",
+          level: "Avanzado",
           text: "Acompañamiento avanzado con refuerzo en gramática, comprensión, vocabulario, lectura y expresión según el nivel del estudiante.",
           accent: "bg-sky-100 text-sky-700",
         },
         {
-         {
-  title: "Portugués",
-  level: "Nivel C1",
+          title: "Portugués",
+          level: "Avanzado",
           text: "Clases orientadas a fortalecer la base, mejorar la comprensión y avanzar con mayor seguridad en el uso del idioma.",
           accent: "bg-emerald-100 text-emerald-700",
         },
         {
           title: "Italiano",
-          {
-  title: "Italiano",
-  level: "Nivel C1",
+          level: "Avanzado",
           text: "Apoyo enfocado en comprensión, estructura, vocabulario y desarrollo progresivo para seguir subiendo de nivel.",
           accent: "bg-amber-100 text-amber-700",
         },
@@ -296,6 +294,7 @@ export default function BrainLabWebsite() {
                 {card.title.charAt(0)}
               </span>
             </div>
+
             <span
               className={`rounded-full px-3 py-1 text-xs font-bold tracking-wide ${card.accent}`}
             >
