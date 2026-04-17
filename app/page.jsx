@@ -24,41 +24,46 @@ export default function BrainLabWebsite() {
           <div className="absolute top-32 -left-16 h-72 w-72 rounded-full bg-sky-200/50 blur-3xl" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
-          <nav className="mb-16 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
+        <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+          <nav className="mb-14 flex items-center justify-between gap-4">
+            <div className="flex min-w-0 items-center gap-3">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
                 <span className="text-xl font-bold">B</span>
               </div>
-              <div>
-                <p className="text-xl font-black tracking-tight">BrainLab</p>
+              <div className="min-w-0">
+                <p className="truncate text-xl font-black tracking-tight">
+                  BrainLab
+                </p>
                 <p className="text-sm text-slate-500">
                   Tutorías que sí se entienden
                 </p>
               </div>
             </div>
+
             <a
               href="#contacto"
-              className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
+              className="shrink-0 rounded-2xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5 sm:px-5"
             >
               Reservar clase
             </a>
           </nav>
 
-          <div className="grid items-center gap-14 lg:grid-cols-2">
-            <div>
-              <div className="mb-5 inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
+            <div className="min-w-0">
+              <div className="mb-5 inline-flex max-w-full items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700">
                 Tutorías presenciales en David, Chiriquí y virtuales
               </div>
-              <h1 className="max-w-2xl text-5xl font-black leading-tight tracking-tight sm:text-6xl">
-                Entender <span className="text-emerald-500">matemáticas</span>,
-                física y química ya no tiene que sentirse imposible.
+
+              <h1 className="max-w-2xl text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+                Aprender con claridad puede marcar la diferencia.
               </h1>
-              <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 text-justify">
-                En BrainLab ayudamos a estudiantes de secundaria y bachiller a
-                reforzar temas, recuperar confianza y aprender de verdad con
-                clases claras, directas y adaptadas a su ritmo.
+
+              <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 text-justify sm:text-lg sm:leading-8">
+                En BrainLab ayudamos a estudiantes a reforzar temas, recuperar
+                confianza y avanzar con clases claras, directas y adaptadas a su
+                ritmo, tanto en tutorías académicas como en apoyo de idiomas.
               </p>
+
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="#servicios"
@@ -74,7 +79,7 @@ export default function BrainLabWebsite() {
                 </a>
               </div>
 
-              <div className="mt-10 grid max-w-xl grid-cols-3 gap-4">
+              <div className="mt-10 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3">
                 {[
                   ["Clases claras", "Explicación paso a paso"],
                   ["A tu ritmo", "Sin presión innecesaria"],
@@ -85,55 +90,60 @@ export default function BrainLabWebsite() {
                     className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
                   >
                     <p className="font-bold">{title}</p>
-                    <p className="mt-1 text-sm text-slate-500">{text}</p>
+                    <p className="mt-1 text-sm leading-6 text-slate-500">
+                      {text}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative min-w-0">
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-emerald-200 to-sky-200 opacity-50 blur-2xl" />
-              <div className="relative rounded-[2rem] border border-slate-200 bg-white p-6 shadow-2xl">
-                <div className="rounded-[1.5rem] bg-slate-900 p-8 text-white">
+              <div className="relative rounded-[2rem] border border-slate-200 bg-white p-5 shadow-2xl sm:p-6">
+                <div className="rounded-[1.5rem] bg-slate-900 p-6 text-white sm:p-8">
                   <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
                     BrainLab
                   </p>
-                  <h2 className="mt-3 text-3xl font-black leading-tight">
+                  <h2 className="mt-3 max-w-lg text-2xl font-black leading-tight sm:text-3xl">
                     No se trata de memorizar.
                     <br />
                     Se trata de entender.
                   </h2>
+
                   <div className="mt-8 grid gap-4 sm:grid-cols-2">
                     {[
-                      "Matemáticas",
-                      "Física",
-                      "Química",
-                      "Español y refuerzo básico",
+                      "Tutorías académicas",
+                      "Idiomas",
+                      "Refuerzo personalizado",
+                      "Acompañamiento virtual y presencial",
                     ].map((item) => (
                       <div
                         key={item}
                         className="rounded-2xl bg-white/10 p-4 backdrop-blur-sm"
                       >
-                        <p className="font-semibold">{item}</p>
+                        <p className="font-semibold leading-6">{item}</p>
                       </div>
                     ))}
                   </div>
                 </div>
+
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
                   <div className="rounded-2xl bg-emerald-50 p-5">
                     <p className="text-sm font-semibold text-emerald-700">
                       Ideal para
                     </p>
-                    <p className="mt-2 text-slate-700 text-justify">
+                    <p className="mt-2 text-slate-700 text-justify leading-7">
                       Estudiantes que quieren reforzar, nivelarse o prepararse
-                      mejor para exámenes.
+                      mejor para exámenes y avanzar con mayor seguridad.
                     </p>
                   </div>
+
                   <div className="rounded-2xl bg-sky-50 p-5">
                     <p className="text-sm font-semibold text-sky-700">
                       Modalidad
                     </p>
-                    <p className="mt-2 text-slate-700 text-justify">
+                    <p className="mt-2 text-slate-700 text-justify leading-7">
                       Presencial en David, Chiriquí, y virtual para estudiantes
                       de otras zonas.
                     </p>
@@ -145,8 +155,8 @@ export default function BrainLabWebsite() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-3">
+      <section className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="grid gap-6 lg:grid-cols-3 lg:gap-10">
           <div className="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-slate-200">
             <h3 className="text-2xl font-black">Quiénes somos</h3>
             <p className="mt-4 leading-7 text-slate-600 text-justify">
@@ -165,8 +175,8 @@ export default function BrainLabWebsite() {
               Lograr que cada estudiante comprenda los temas desde la base,
               eliminando la frustración y fortaleciendo su seguridad académica.
               Buscamos que el aprendizaje sea progresivo, real y sostenible,
-              para que puedan enfrentar exámenes y clases con mayor tranquilidad
-              y dominio.
+              para que puedan enfrentar clases, evaluaciones y nuevos retos con
+              mayor tranquilidad y dominio.
             </p>
           </div>
 
@@ -183,15 +193,15 @@ export default function BrainLabWebsite() {
         </div>
       </section>
 
-      <section id="servicios" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <section id="servicios" className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-emerald-500">
             Servicios
           </p>
-          <h2 className="mt-3 text-4xl font-black tracking-tight">
+          <h2 className="mt-3 text-4xl font-black tracking-tight leading-tight">
             Apoyo académico pensado para que el estudiante avance de verdad.
           </h2>
-          <p className="mt-4 text-lg text-slate-600 text-justify">
+          <p className="mt-4 text-base leading-7 text-slate-600 text-justify sm:text-lg sm:leading-8">
             Desde temas básicos hasta contenidos más exigentes, cada clase se
             adapta a la necesidad real del estudiante.
           </p>
@@ -230,8 +240,53 @@ export default function BrainLabWebsite() {
         </div>
       </section>
 
+      <section id="idiomas" className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-slate-200 sm:p-10">
+          <div className="max-w-2xl">
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-sky-500">
+              Idiomas
+            </p>
+            <h2 className="mt-3 text-4xl font-black tracking-tight leading-tight">
+              También ofrecemos apoyo en idiomas.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 text-justify sm:text-lg sm:leading-8">
+              Para estudiantes que desean reforzar su comprensión, mejorar su
+              expresión y avanzar con mayor seguridad, BrainLab también cuenta
+              con acompañamiento en idiomas.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Inglés",
+                text: "Refuerzo de vocabulario, comprensión, gramática y práctica adaptada al nivel del estudiante.",
+              },
+              {
+                title: "Italiano",
+                text: "Acompañamiento para desarrollar bases sólidas y mejorar la comprensión de forma progresiva.",
+              },
+              {
+                title: "Portugués",
+                text: "Clases orientadas a reforzar estructura, lectura, pronunciación y seguridad al expresarse.",
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6"
+              >
+                <h3 className="text-2xl font-bold">{card.title}</h3>
+                <p className="mt-3 leading-7 text-slate-600 text-justify">
+                  {card.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-slate-900 text-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.25em] text-emerald-300">
@@ -240,12 +295,13 @@ export default function BrainLabWebsite() {
               <h2 className="mt-3 text-4xl font-black tracking-tight">
                 Menos frustración. Más claridad.
               </h2>
-              <p className="mt-4 max-w-xl text-lg text-slate-300 text-justify">
+              <p className="mt-4 max-w-xl text-base leading-7 text-slate-300 text-justify sm:text-lg sm:leading-8">
                 Aquí el objetivo no es llenar al estudiante de información, sino
                 explicarle bien, detectar qué le está frenando y ayudarlo a
                 avanzar con seguridad.
               </p>
             </div>
+
             <div className="grid gap-4 sm:grid-cols-2">
               {[
                 "Clases personalizadas",
@@ -257,7 +313,7 @@ export default function BrainLabWebsite() {
                   key={item}
                   className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm"
                 >
-                  <p className="font-semibold">{item}</p>
+                  <p className="font-semibold leading-6">{item}</p>
                 </div>
               ))}
             </div>
@@ -265,7 +321,7 @@ export default function BrainLabWebsite() {
         </div>
       </section>
 
-      <section id="contacto" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <section id="contacto" className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-slate-200">
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-emerald-500">
@@ -274,15 +330,17 @@ export default function BrainLabWebsite() {
             <h2 className="mt-3 text-4xl font-black tracking-tight">
               Reserva tu clase
             </h2>
-            <p className="mt-4 max-w-xl text-lg text-slate-600 text-justify">
-              Escríbenos y cuéntanos qué materia necesitas reforzar. Te
-              orientamos según el nivel y el objetivo del estudiante.
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate-600 text-justify sm:text-lg sm:leading-8">
+              Escríbenos y cuéntanos qué área necesitas reforzar. Te orientamos
+              según el nivel y el objetivo del estudiante.
             </p>
+
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl bg-slate-50 p-5">
                 <p className="text-sm font-semibold text-slate-500">WhatsApp</p>
                 <p className="mt-2 text-lg font-bold">6867-1253</p>
               </div>
+
               <div className="rounded-2xl bg-slate-50 p-5">
                 <p className="text-sm font-semibold text-slate-500">
                   Ubicación
@@ -294,9 +352,9 @@ export default function BrainLabWebsite() {
 
           <div className="rounded-[2rem] bg-gradient-to-br from-emerald-500 to-sky-500 p-8 text-white shadow-2xl">
             <h3 className="text-3xl font-black">¿Listo para empezar?</h3>
-            <p className="mt-4 text-white/90 text-justify">
-              Presencial o virtual. Para secundaria, bachiller y también
-              refuerzo básico para niños.
+            <p className="mt-4 text-white/90 text-justify leading-7">
+              Presencial o virtual. Tutorías académicas, refuerzo básico e
+              idiomas en un espacio pensado para aprender con más claridad.
             </p>
             <a
               href="https://api.whatsapp.com/send?phone=50768671253&text=Hola%2C%20quiero%20empezar%20con%20las%20tutor%C3%ADas"
