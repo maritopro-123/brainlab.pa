@@ -257,20 +257,24 @@ export default function BrainLabWebsite() {
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {[
-              {
-                title: "Inglés",
-                text: "Refuerzo de vocabulario, comprensión, gramática y práctica adaptada al nivel del estudiante.",
-              },
-              {
-                title: "Italiano",
-                text: "Acompañamiento para desarrollar bases sólidas y mejorar la comprensión de forma progresiva.",
-              },
-              {
-                title: "Portugués",
-                text: "Clases orientadas a reforzar estructura, lectura, pronunciación y seguridad al expresarse.",
-              },
-            ].map((card) => (
+           {[
+  {
+    title: "Inglés",
+    text: "Acompañamiento hasta nivel C2, con refuerzo en gramática, comprensión, vocabulario, lectura y expresión según el nivel del estudiante.",
+  },
+  {
+    title: "Portugués",
+    text: "Clases orientadas hasta nivel B2, ideales para fortalecer la base, mejorar la comprensión y avanzar con más seguridad en el idioma.",
+  },
+  {
+    title: "Italiano",
+    text: "Apoyo en nivel intermedio avanzado, enfocado en comprensión, estructura, vocabulario y desarrollo progresivo del idioma.",
+  },
+  {
+    title: "Japonés",
+    text: "Introducción y refuerzo en niveles N5 y N4, trabajando lectura básica, vocabulario, estructura y comprensión de forma guiada.",
+  },
+].map((card) => (
               <div
                 key={card.title}
                 className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6"
