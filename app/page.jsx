@@ -241,53 +241,77 @@ export default function BrainLabWebsite() {
       </section>
 
       <section id="idiomas" className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-slate-200 sm:p-10">
-          <div className="max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-[0.25em] text-sky-500">
-              Idiomas
-            </p>
-            <h2 className="mt-3 text-4xl font-black tracking-tight leading-tight">
-              También ofrecemos apoyo en idiomas.
-            </h2>
-            <p className="mt-4 text-base leading-7 text-slate-600 text-justify sm:text-lg sm:leading-8">
-              Para estudiantes que desean reforzar su comprensión, mejorar su
-              expresión y avanzar con mayor seguridad, BrainLab también cuenta
-              con acompañamiento en idiomas.
-            </p>
+  <div className="overflow-hidden rounded-[2.5rem] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-8 shadow-xl sm:p-10">
+    <div className="max-w-3xl">
+      <p className="text-sm font-bold uppercase tracking-[0.25em] text-sky-500">
+        Idiomas
+      </p>
+      <h2 className="mt-3 text-4xl font-black tracking-tight leading-tight sm:text-5xl">
+        También ofrecemos apoyo en idiomas.
+      </h2>
+      <p className="mt-4 text-base leading-7 text-slate-600 text-justify sm:text-lg sm:leading-8">
+        Contamos con acompañamiento en idiomas para estudiantes que desean
+        fortalecer su nivel, practicar con mayor seguridad y avanzar de forma
+        clara y progresiva según sus objetivos.
+      </p>
+    </div>
+
+    <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      {[
+        {
+          title: "Inglés",
+          level: "Nivel C2",
+          text: "Acompañamiento avanzado con refuerzo en gramática, comprensión, vocabulario, lectura y expresión según el nivel del estudiante.",
+          accent: "bg-sky-100 text-sky-700",
+        },
+        {
+          title: "Portugués",
+          level: "Hasta B2",
+          text: "Clases orientadas a fortalecer la base, mejorar la comprensión y avanzar con mayor seguridad en el uso del idioma.",
+          accent: "bg-emerald-100 text-emerald-700",
+        },
+        {
+          title: "Italiano",
+          level: "Intermedio avanzado",
+          text: "Apoyo enfocado en comprensión, estructura, vocabulario y desarrollo progresivo para seguir subiendo de nivel.",
+          accent: "bg-amber-100 text-amber-700",
+        },
+        {
+          title: "Japonés",
+          level: "N5 - N4",
+          text: "Introducción y refuerzo en lectura básica, vocabulario, estructura y comprensión de forma guiada y progresiva.",
+          accent: "bg-rose-100 text-rose-700",
+        },
+      ].map((card) => (
+        <div
+          key={card.title}
+          className="group flex h-full flex-col rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+        >
+          <div className="mb-5 flex items-center justify-between">
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-sm">
+              <span className="text-lg font-bold">
+                {card.title.charAt(0)}
+              </span>
+            </div>
+            <span
+              className={`rounded-full px-3 py-1 text-xs font-bold tracking-wide ${card.accent}`}
+            >
+              {card.level}
+            </span>
           </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-           {[
-  {
-    title: "Inglés",
-    text: "Acompañamiento hasta nivel C2, con refuerzo en gramática, comprensión, vocabulario, lectura y expresión según el nivel del estudiante.",
-  },
-  {
-    title: "Portugués",
-    text: "Clases orientadas hasta nivel B2, ideales para fortalecer la base, mejorar la comprensión y avanzar con más seguridad en el idioma.",
-  },
-  {
-    title: "Italiano",
-    text: "Apoyo en nivel intermedio avanzado, enfocado en comprensión, estructura, vocabulario y desarrollo progresivo del idioma.",
-  },
-  {
-    title: "Japonés",
-    text: "Introducción y refuerzo en niveles N5 y N4, trabajando lectura básica, vocabulario, estructura y comprensión de forma guiada.",
-  },
-].map((card) => (
-              <div
-                key={card.title}
-                className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6"
-              >
-                <h3 className="text-2xl font-bold">{card.title}</h3>
-                <p className="mt-3 leading-7 text-slate-600 text-justify">
-                  {card.text}
-                </p>
-              </div>
-            ))}
-          </div>
+          <h3 className="text-2xl font-black tracking-tight">
+            {card.title}
+          </h3>
+
+          <p className="mt-4 leading-7 text-slate-600 text-justify">
+            {card.text}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <section className="bg-slate-900 text-white">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
