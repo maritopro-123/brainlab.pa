@@ -265,14 +265,17 @@ export default function BrainLabWebsite() {
           accent: "bg-sky-100 text-sky-700",
         },
         {
-          title: "Portugués",
-          level: "Hasta B2",
+         {
+  title: "Portugués",
+  level: "Nivel C1",
           text: "Clases orientadas a fortalecer la base, mejorar la comprensión y avanzar con mayor seguridad en el uso del idioma.",
           accent: "bg-emerald-100 text-emerald-700",
         },
         {
           title: "Italiano",
-          level: "Intermedio avanzado",
+          {
+  title: "Italiano",
+  level: "Nivel C1",
           text: "Apoyo enfocado en comprensión, estructura, vocabulario y desarrollo progresivo para seguir subiendo de nivel.",
           accent: "bg-amber-100 text-amber-700",
         },
