@@ -6,7 +6,7 @@ export default function BrainLabWebsite() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Escribir por WhatsApp"
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 shadow-xl transition hover:scale-105 hover:bg-emerald-600"
+        className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 shadow-xl transition hover:scale-105 hover:bg-emerald-600 sm:bottom-6 sm:right-6"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,28 +40,28 @@ export default function BrainLabWebsite() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex w-full flex-wrap gap-2 lg:w-auto lg:gap-3">
               <a
                 href="#servicios"
-                className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+                className="flex-1 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 sm:flex-none"
               >
                 Servicios
               </a>
               <a
                 href="#idiomas"
-                className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+                className="flex-1 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 sm:flex-none"
               >
                 Idiomas
               </a>
               <a
                 href="#porque-brainlab"
-                className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+                className="flex-1 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 sm:flex-none"
               >
                 Por qué BrainLab
               </a>
               <a
                 href="#contacto"
-                className="rounded-2xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5 sm:px-5"
+                className="flex-1 rounded-2xl bg-slate-900 px-4 py-3 text-center text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5 sm:flex-none sm:px-5"
               >
                 Contacto
               </a>
@@ -74,7 +74,7 @@ export default function BrainLabWebsite() {
                 Tutorías presenciales en David, Chiriquí y virtuales
               </div>
 
-              <h1 className="max-w-2xl text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="max-w-2xl text-3xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
                 Aprender con claridad puede marcar la diferencia.
               </h1>
 
@@ -84,22 +84,22 @@ export default function BrainLabWebsite() {
                 ritmo, tanto en tutorías académicas como en apoyo de idiomas.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
                 <a
                   href="#servicios"
-                  className="rounded-2xl bg-emerald-500 px-6 py-3.5 text-base font-semibold text-white shadow-xl shadow-emerald-500/20 transition hover:-translate-y-0.5"
+                  className="rounded-2xl bg-emerald-500 px-6 py-3.5 text-center text-base font-semibold text-white shadow-xl shadow-emerald-500/20 transition hover:-translate-y-0.5"
                 >
                   Ver servicios
                 </a>
                 <a
                   href="#contacto"
-                  className="rounded-2xl border border-slate-200 bg-white px-6 py-3.5 text-base font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+                  className="rounded-2xl border border-slate-200 bg-white px-6 py-3.5 text-center text-base font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
                 >
                   Escribir por WhatsApp
                 </a>
               </div>
 
-              <div className="mt-10 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3">
+              <div className="mt-10 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   ["Clases claras", "Explicación paso a paso"],
                   ["A tu ritmo", "Sin presión innecesaria"],
@@ -311,7 +311,7 @@ export default function BrainLabWebsite() {
             ].map((card) => (
               <div
                 key={card.title}
-                className="group flex h-full flex-col rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="group flex h-full flex-col rounded-[1.75rem] border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-6"
               >
                 <div className="mb-5 flex items-center justify-between">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-sm">
@@ -327,7 +327,7 @@ export default function BrainLabWebsite() {
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-black tracking-tight">
+                <h3 className="text-xl font-black tracking-tight sm:text-2xl">
                   {card.title}
                 </h3>
 
@@ -420,7 +420,7 @@ export default function BrainLabWebsite() {
               href="https://api.whatsapp.com/send?phone=50768671253&text=Hola%2C%20quiero%20empezar%20con%20las%20tutor%C3%ADas"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex rounded-2xl bg-white px-6 py-3.5 text-base font-semibold text-slate-900 shadow-lg transition hover:-translate-y-0.5"
+              className="mt-8 inline-flex w-full justify-center rounded-2xl bg-white px-6 py-3.5 text-base font-semibold text-slate-900 shadow-lg transition hover:-translate-y-0.5 sm:w-auto"
             >
               Ir a WhatsApp
             </a>
