@@ -2,7 +2,7 @@ export default function BrainLabWebsite() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <a
-        href="https://wa.me/50768671253?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20tutor%C3%ADas"
+        href="https://wa.me/50768671253?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%20y%20cursos%20disponibles"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Escribir por WhatsApp"
@@ -417,7 +417,7 @@ export default function BrainLabWebsite() {
               idiomas en un espacio pensado para aprender con más claridad.
             </p>
             <a
-              href="https://api.whatsapp.com/send?phone=50768671253&text=Hola%2C%20quiero%20empezar%20con%20las%20tutor%C3%ADas"
+              href="https://api.whatsapp.com/send?phone=50768671253&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%20y%20cursos%20disponibles"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex w-full justify-center rounded-2xl bg-white px-6 py-3.5 text-base font-semibold text-slate-900 shadow-lg transition hover:-translate-y-0.5 sm:w-auto"
